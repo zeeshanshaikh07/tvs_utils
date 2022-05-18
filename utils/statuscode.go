@@ -16,3 +16,7 @@ func Ok() Status_code {
 func BadRequest() Status_code {
 	return Status_code{Code: 500, Message: "Failed to process request.Please try again!"}
 }
+
+func Failed() Status_code {
+	return Status_code{Code: 400, Message: "Failed.Please try again!"}
+}
